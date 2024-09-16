@@ -2,6 +2,7 @@ CLASES:
 
 - Personal
 - Evento
+- SalaDeEvento
 - Persona
 - Socios
 - Ticket
@@ -24,7 +25,13 @@ Atributos:
   + paisDeOrigen: string
   + añoDeRealizacion: date
   + director: string
-
+- SalaDeEvento:
+  - nombre: String
+  - capacidad: int
+  - ubicacion: String
+  + publicarEvento(Evento evento)
+  + asignarHorario(Evento evento, Horario horario)
+  + definirPrecioEntrada(Evento evento, double precio)
 - Persona:
   + nombre: string
   + apellido: string
